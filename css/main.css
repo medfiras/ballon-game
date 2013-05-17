@@ -1,0 +1,116 @@
+html, body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    background-image: url("../img/image.jpg");
+    -webkit-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+
+/*******************************
+** Main content
+*******************************/
+body{
+    background-image:url('../img/bg_lr_1_small.png'), url('../img/bg_lr_2_small.png'), url('../img/bg_lr_3_small.png');
+    background-position:0% 0px, 0% 0px, 0% 0px;
+    background-repeat:repeat-x;    /* Utilisez no-repeat pour retirer des rayons */
+    background-size:contain;
+
+    -ms-animation: movingBg 25s linear infinite alternate;
+    -moz-animation: movingBg 25s linear infinite alternate;
+    -webkit-animation: movingBg 25s linear infinite alternate;
+}
+
+/*******************************
+** Animations
+*******************************/
+@-ms-keyframes movingBg{
+    0%{background-position:0% 0px, 50% 0px, 100% 0px;}
+    10%{background-position:3% 0px, 43% 0px, 92% 0px;}
+    20%{background-position:8% 5px, 33% -10px, 80% 0px;}
+    40%{background-position:15% 15px, 30% 0px, 60% 15px;}
+    60%{background-position:25% 20px, 20% 15px, 40% 0px;}
+    80%{background-position:31% 25px, 12% 25px, 20% 8px;}
+    90%{background-position:37% 29px, 5% 28px, 5% 13px;}
+    100%{background-position:40% 30px, 3% 30px, 0% 15px;}
+}
+
+@-moz-keyframes movingBg{
+    0%{background-position:0% 0px, 50% 0px, 100% 0px;}
+    10%{background-position:3% 0px, 43% 0px, 92% 0px;}
+    20%{background-position:8% 5px, 33% -10px, 80% 0px;}
+    40%{background-position:15% 15px, 30% 0px, 60% 15px;}
+    60%{background-position:25% 20px, 20% 15px, 40% 0px;}
+    80%{background-position:31% 25px, 12% 25px, 20% 8px;}
+    90%{background-position:37% 29px, 5% 28px, 5% 13px;}
+    100%{background-position:40% 30px, 3% 30px, 0% 15px;}
+}
+
+@-webkit-keyframes movingBg{
+    0%{background-position:0% 0px, 50% 0px, 100% 0px;}
+    10%{background-position:3% 0px, 43% 0px, 92% 0px;}
+    20%{background-position:8% 5px, 33% -10px, 80% 0px;}
+    40%{background-position:15% 15px, 30% 0px, 60% 15px;}
+    60%{background-position:25% 20px, 20% 15px, 40% 0px;}
+    80%{background-position:31% 25px, 12% 25px, 20% 8px;}
+    90%{background-position:37% 29px, 5% 28px, 5% 13px;}
+    100%{background-position:40% 30px, 3% 30px, 0% 15px;}
+} 
+        
+progress{
+   display: inline-block;
+   -moz-box-sizing: border-box;
+        box-sizing: border-box;
+   
+   padding: 2px 2px 1px 2px;
+   background: #333;
+   background: -webkit-linear-gradient(#2d2d2d,#444);
+   background:    -moz-linear-gradient(#2d2d2d,#444);
+   background:      -o-linear-gradient(#2d2d2d,#444);
+   background:         linear-gradient(#2d2d2d,#444);
+   border: 0px rgba(0,0,0,.5);
+   border-radius: 15px;
+   box-shadow: 0 1px 0 rgba(255,255,255,.2);  
+}
+progress::-moz-progress-bar{
+   border-radius:10px;
+   background: #09c;
+   background:
+     -moz-repeating-linear-gradient(
+       45deg,
+       rgba(255,255,255,.2) 0,
+       rgba(255,255,255,.2) 10px,
+       rgba(255,255,255,0) 10px,
+       rgba(255,255,255,0) 20px
+     ),
+     -moz-linear-gradient(
+       rgba(255,255,255,.1) 50%,
+       rgba(255,255,255,0) 60%
+     ),
+     #09c;
+   background:
+     repeating-linear-gradient(
+       45deg,
+       rgba(255,255,255,.2) 0,
+       rgba(255,255,255,.2) 10px,
+       rgba(255,255,255,0) 10px,
+       rgba(255,255,255,0) 20px
+     ),
+     linear-gradient(
+       rgba(255,255,255,.1) 50%,
+       rgba(255,255,255,0) 60%
+     ),
+     #09c;
+   background-size: auto auto, auto, auto;
+   background-position: -300px 0, top, top;
+   background-position: top right, top, top;
+   box-shadow: 0 1px 0 rgba(255,255,255,.5) inset,
+               0 -1px 0 rgba(0,0,0,.8) inset,
+               0 0 2px black;
+ 
+}
+
+canvas { display: block; margin: 0 auto; background-image: url("../img/bg_lr_1_small.png"); border:4px solid #d3d3d3;}
