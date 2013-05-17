@@ -1,0 +1,17 @@
+{
+  "name": "BULLE",
+  "description": "ghafes bulle",
+  "launch_path": "/game/index.html",
+  "developer": {
+    "name": "MedFiras",
+    "url": "https://github.com/medfiras/"
+  },
+  "permissions": [
+  ],
+  "default_locale": "en-US",
+  "icons": {
+    "120": "ballon.png",
+    "60": "ballon.png"
+  },
+  "orientation": "portrait-primary"
+}
